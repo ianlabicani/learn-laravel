@@ -9,3 +9,4 @@
     @endif
     <form action="{{ route('product.store') }}" method="post">
         @csrf
+        @method('post')
