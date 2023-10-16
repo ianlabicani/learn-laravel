@@ -8,3 +8,4 @@
         </div>
     @endif
     <form action="{{ route('product.store') }}" method="post">
+        @csrf
