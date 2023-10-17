@@ -11,4 +11,10 @@ class StudentController extends Controller
     {
         return view('students.index');
     }
+
+    public function show()
+    {
+        $student = Student::find(request('id'));
+        return view('students.index', ['student' => $student]);
+    }
 }
